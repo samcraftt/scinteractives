@@ -4,48 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SC Interactives</title>
-    <link rel="icon" href="/icon.jpg" type="image/x-icon">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2F2F2F; /* Dark Gray */
-            color: #FFFFFF;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            color: #FF6F61; /* Hot Coral */
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .container {
-            background-color: #393939;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .contact {
-            margin-top: 20px;
-            font-size: 1em;
-            color: #FF6F61;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="sci.png" type="image/png">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to SC Interactives!</h1>
-        <p>iOS Application Development</p>
-        <p>For support with apps, please <a style="color: #FFFFFF;" href="mailto:craftsam28@gmail.com">email us</a>.</p>
-        <hr>
-        <h1>Applications</h1>
-        <p><a style="color: #FFFFFF;" href="https://apps.apple.com/app/the-david-game/id6627351419">The David Game</a></p>
-        <p><a style="color: #FFFFFF;" href="https://apps.apple.com/us/app/simons-colors-memory-game/id6504947156">Simon's Colors: Memory Game</a></p>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li style="color: white;">SC Interactives | Mobile Application Development</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About SCI</h2>
+            <p>SC Interactives is a mobile application development team founded by undergraduates at Boston College. We are motivated to consolidate our talents to produce engaging and resourceful apps that serve a variety of needs.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Our Apps</h2>
+            <div class="project-grid">
+
+        <div class="project-card">
+            <img src="images/davidgamecircle.png" alt="DavidGame">
+            <div class="content">
+                <h3>The David Game</h3>
+                <p>A multiplayer iOS application that combines and digitalizes drawing, guessing, and storytelling.</p>
+                <hr>
+                <a href="https://apps.apple.com/app/the-david-game/id6627351419" target="_blank">Try the App</a><br>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/simonscolors.png" alt="SimonsColors">
+            <div class="content">
+                <h3>Simon's Colors: Memory Game</h3>
+                <p>An iOS application that mimics the classic Simon color memorization game.</p>
+               <hr>
+                <a href="https://apps.apple.com/us/app/simons-colors-memory-game/id6504947156" target="_blank">Try the App</a><br>
+            </div>
+        </div>
+          
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Text or Call: <a href="tel:+17812648136">+1 (781) 264-8136</a></p>
+            <p>Email: <a href="mailto:craftsa@bc.edu">craftsa@bc.edu</a></p>
+        </section>
+        <section id="socials">
+            <h2>Socials</h2>
+            <p>LinkedIn: <a href="https://linkedin.com/in/samuelcraft1">samuelcraft1</a></p>
+            <p>GitHub: <a href="https://github.com/samcraftt">samcraftt</a></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

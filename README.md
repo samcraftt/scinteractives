@@ -1,1 +1,0 @@
-# scinteractives.github.io

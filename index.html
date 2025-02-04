@@ -3,85 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SC Interactives</title>
+    <title>SC Interactives | Mobile App Development Studio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
     <link rel="icon" href="sci.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li style="color: white; display: flex; align-items: center;">
-                <img src="sci.png" alt="SC Interactives Logo" style="width: 60px; height: 60px; margin-right: 15px;">
-                <span style="font-size: 1.5rem;">SC Interactives | Mobile Application Development</span>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="sci.png" alt="SC Interactives Logo">
+                    <span>SC Interactives</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <main>
-        <section id="about">
-            <h2>About SCI</h2>
-            <p>SC Interactives is a mobile application development team founded by undergraduates at Boston College. We are motivated to consolidate our talents to produce engaging and resourceful apps that serve a variety of needs.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Innovative Mobile App Development</h1>
+                <p>We create engaging, user-centric apps that solve real-world problems.</p>
+                <a href="#projects" class="cta-button">Explore Our Work</a>
+            </div>
         </section>
 
-        <section id="projects">
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>About SC Interactives</h2>
+            <p>SC Interactives is a mobile application development team founded by undergraduates at Boston College. We are passionate about creating apps that are not only functional but also delightful to use. Our mission is to bring innovative ideas to life through cutting-edge technology and design.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
             <h2>Our Apps</h2>
             <div class="project-grid">
+                <!-- Project Cards -->
+                <div class="project-card">
+                    <img src="images/bedhead.png" alt="BedHead">
+                    <div class="content">
+                        <h3>Bed Head</h3>
+                        <p>An iOS social media alarm clock app that makes waking up exciting, competitive, and fun.</p>
+                        <hr>
+                        <p class="coming-soon">Coming soon...</p>
+                    </div>
+                </div>
 
-        <div class="project-card">
-            <img src="images/bedhead.png" alt="BedHead">
-            <div class="content">
-                <h3>Bed Head</h3>
-                <p>An iOS social media alarm clock app that makes the burden of "getting out of bead" exciting, competetive, and fun.</p>
-                <hr>
-                <p>Coming soon...</p><br>
-            </div>
-        </div>
+                <div class="project-card">
+                    <img src="images/davidgamecircle.png" alt="DavidGame">
+                    <div class="content">
+                        <h3>The David Game</h3>
+                        <p>A multiplayer iOS app that combines drawing, guessing, and storytelling.</p>
+                        <hr>
+                        <a href="https://apps.apple.com/app/the-david-game/id6627351419" target="_blank" class="app-link">View on the App Store</a>
+                    </div>
+                </div>
 
-        <div class="project-card">
-            <img src="images/davidgamecircle.png" alt="DavidGame">
-            <div class="content">
-                <h3>The David Game</h3>
-                <p>A multiplayer iOS app that combines and digitalizes drawing, guessing, and storytelling.</p>
-                <hr>
-                <a href="https://apps.apple.com/app/the-david-game/id6627351419" target="_blank">View on the Apple App Store</a><br>
-            </div>
-        </div>
+                <div class="project-card">
+                    <img src="images/weatherle.png" alt="Weatherle">
+                    <div class="content">
+                        <h3>Weatherle</h3>
+                        <p>An Android app where players guess the city based on real-time weather data.</p>
+                        <hr>
+                        <a href="https://play.google.com/store/apps/details?id=com.onatcipli.weatherle&hl=en_US&pli=1" target="_blank" class="app-link">View on Google Play</a>
+                    </div>
+                </div>
 
-        <div class="project-card">
-            <img src="images/weatherle.png" alt="Weatherle">
-            <div class="content">
-                <h3>Weatherle</h3>
-                <p>An android app where players guess the city based on real-time weather data.</p>
-                <hr>
-                <a href="https://play.google.com/store/apps/details?id=com.onatcipli.weatherle&hl=en_US&pli=1" target="_blank">View on the Google Play Store</a><br>
-            </div>
-        </div>
+                <div class="project-card">
+                    <img src="images/huehopper.png" alt="HueHop">
+                    <div class="content">
+                        <h3>Hue Hop: Memory Game</h3>
+                        <p>An iOS app where users memorize and recite color patterns.</p>
+                        <hr>
+                        <a href="https://apps.apple.com/us/app/hue-hop-memory-game/id6737150501" target="_blank" class="app-link">View on the App Store</a>
+                    </div>
+                </div>
 
-        <div class="project-card">
-            <img src="images/huehopper.png" alt="HueHop">
-            <div class="content">
-                <h3>Hue Hop: Memory Game</h3>
-                <p>An iOS app where users memorize and recite color patterns.</p>
-                <hr>
-                <a href="https://apps.apple.com/us/app/hue-hop-memory-game/id6737150501" target="_blank">View on the Apple App Store</a><br>
+                <div class="project-card">
+                    <img src="images/lorodha.png" alt="Lorodha">
+                    <div class="content">
+                        <h3>Lorodha</h3>
+                        <p>An Android app that simplifies task management and helps you stay organized.</p>
+                        <hr>
+                        <a href="https://play.google.com/store/apps/details?id=com.onatcipli.TodayList&hl=en_US" target="_blank" class="app-link">View on Google Play</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="project-card">
-            <img src="images/lorodha.png" alt="Lorodha">
-            <div class="content">
-                <h3>Lorodha</h3>
-                <p>An android app that simplifies task management and helps you stay organized.</p>
-                <hr>
-                <a href="https://play.google.com/store/apps/details?id=com.onatcipli.TodayList&hl=en_US">View on the Google Play Store</a><br>
-            </div>
-        </div>
-          
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2023 SC Interactives. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
